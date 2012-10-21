@@ -1,16 +1,14 @@
 # ExpressionEngine StackExchange API Spec
 
-## Version
+### Version
 
 0.1.0 (2012-10-21)
 
-
-## Contributors
+### Contributors
 
 - Objective HTML
 
-
-## Overview
+### Overview
 
 StackExchange provides an excellent Q&A format that has been proven to be very effective. However, almost all developers would agree that it would be far too time consuming and produce inferior results if every site rolled their own variation. The purpose of this document is to get community collaboration on how to provide the best support possible by integrating the StackExchange API into our websites all in an effort to provide high quality and standardized public support. This document is written for developers but it is encouraged that all users give feedback, so we (the developers) can provide the best support we can in the least amount of time.
 
@@ -56,13 +54,12 @@ The main objective of these methods would be to allow users to easily search for
 4. Get related information based on a spefic question ID
 5. EE tags should provide variables and tag pairs to get comments and other associated meta data
 
-
 ### Dynamic Links
 
 1. Provide EE tags to create dynamic links that will assist users in creating posts that have already been tagged appropriately. http://meta.stackoverflow.com/questions/33195/can-i-have-a-link-to-the-ask-as-question-page-with-the-tag-field-pre-filled/67699#67699
 2. SAEF that would do the same as above except users fill in a form and that data is then sent to the StackExchange.
 
-### Cacheing
+### Caching
 
 Cacheing should be built into the core. Using config files, one could adjust the cache length. This would minimize all requests to the server.
 
@@ -87,7 +84,7 @@ Abstraction is the utmost importance here. All code should 100% DRY with a clear
 	- sends https requests to the API endpoints
 
 
-*Subclasses would be considered 'drivers'. Drivers could perform any additional custom logic not a part of the core API. This will allow for a scalable architecture so if StackExchange adds new features, the core API won't have to be changes. Additionally, if other developers want to integrate even more custom features, drivers will be a way for people to use the core API without hacking or breaking code. Drivers and extendible architecture is critical to success*
+*Subclasses would be considered 'drivers'. Drivers could perform any additional custom logic not a part of the core API. This will allow for a scalable architecture so if StackExchange adds new features, the core API won't have to be changes. Additionally, if other developers want to integrate even more custom features, drivers will be a way for people to use the core API without hacking or breaking existing code. Drivers and extendible architecture is critical to success and for developer adoption.*
 
 ---
 
