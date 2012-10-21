@@ -8,8 +8,6 @@
 
 - Objective HTML
 
----
-
 ### Overview
 
 StackExchange provides an excellent Q&A format that has been proven to be very effective. However, almost all developers would agree that it would be far too time consuming and produce inferior results if every site rolled their own variation. The purpose of this document is to get community collaboration on how to provide the best support possible by integrating the StackExchange API into our websites all in an effort to provide high quality and standardized public support. This document is written for developers but it is encouraged that all users give feedback, so we (the developers) can provide the best support we can in the least amount of time.
@@ -56,20 +54,14 @@ The main objective of these methods would be to allow users to easily search for
 4. Get related information based on a spefic question ID
 5. EE tags should provide variables and tag pairs to get comments and other associated meta data
 
----
-
 ### Dynamic Links
 
 1. Provide EE tags to create dynamic links that will assist users in creating posts that have already been tagged appropriately. http://meta.stackoverflow.com/questions/33195/can-i-have-a-link-to-the-ask-as-question-page-with-the-tag-field-pre-filled/67699#67699
 2. SAEF that would do the same as above except users fill in a form and that data is then sent to the StackExchange.
 
----
-
 ### Caching
 
 Cacheing should be built into the core. Using config files, one could adjust the cache length. This would minimize all requests to the server.
-
----
 
 ### Abstraction
 
