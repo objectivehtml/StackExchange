@@ -1,36 +1,36 @@
 # ExpressionEngine StackExchange API Spec
 
-## Version
+### Version
 
 0.1.0 (2012-10-21)
 
 
-## Contributors
+### Contributors
 
 - Objective HTML
 
 
-## Overview
+### Overview
 
 StackExchange provides an excellent Q&A format that has been proven to be very effective. However, almost all developers would agree that it would be far too time consuming and produce inferior results if every site rolled their own variation. The purpose of this document is to get community collaboration on how to provide the best support possible by integrating the StackExchange API into our ExpressionEngine sites. This document is written for developers, but is in no way limited to developer comments and suggestions.
 
 ---
 
-## Standard API Calls
+### Standard API Calls
 
 Port all the API methods into standard EE tags. Using a single "api" endpoint, and use a fourth segment to denote the API method to be called. This will allow for all 3 segment tags to execute methods that perform custom logic.
 
 	{exp:stackexchange:api:method_name arg1="value1" arg2="value2" arg3="value3"}
 
 
-## Advanced API calls
+### Advanced API calls
 
 Standard EE tags will perform more advanced calls, often performing multiple requests to the API. These methods will make advanced integration much easier.
 
 	{exp:stackexchange:method_name param1="value1" param2="value2"}
 
 
-## Searchable Knowledgebase
+### Searchable Knowledgebase
 
 The main objective to these methods would be to allow users to easily search for other questions/answers, and easily fetch all the associated meta data. This data would be parsed into various EE variables and tag pairs.
 
@@ -41,16 +41,16 @@ The main objective to these methods would be to allow users to easily search for
 5. EE tags should provide variables and tag pairs to get comments and other associated meta data
 
 
-## Dynamic Links
+### Dynamic Links
 
 1. Provide EE tags to create dynamic links that will assist users in creating posts that have already been tagged appropriately. http://meta.stackoverflow.com/questions/33195/can-i-have-a-link-to-the-ask-as-question-page-with-the-tag-field-pre-filled/67699#67699
 2. SAEF that would do the same as above except users fill in a form and that data is then sent to the StackExchange.
 
-## Cacheing
+### Cacheing
 
 Cacheing should be built into the core. Using config files, one could adjust the cache length. This would minimize all requests to the server.
 
-## Abstraction
+### Abstraction
 
 Abstraction is the utmost importance here. All code should 100% DRY with a clear architecture in mind. Here is a basic outline of the core proposed architecture.
 
@@ -75,7 +75,7 @@ Abstraction is the utmost importance here. All code should 100% DRY with a clear
 
 ---
 
-## How to Contribute?
+### How to Contribute?
 
 All the proposed code is intended to be open source. It's intended for everyone to benefit from this migration to StackExchange. There is clearly a lot of momentum to be involved, and getting developers on board will only make things easier. Non developers can contributes with ideas, features, and commenting on how you would like to see improved support. 
 
