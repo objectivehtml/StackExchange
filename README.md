@@ -1,38 +1,54 @@
 # ExpressionEngine StackExchange API Spec
 
-### Version
+## Version
 
 0.1.0 (2012-10-21)
 
 
-### Contributors
+## Contributors
 
 - Objective HTML
 
 
-### Overview
+## Overview
 
-StackExchange provides an excellent Q&A format that has been proven to be very effective. However, almost all developers would agree that it would be far too time consuming and produce inferior results if every site rolled their own variation. The purpose of this document is to get community collaboration on how to provide the best support possible by integrating the StackExchange API into our ExpressionEngine sites. This document is written for developers, but is in no way limited to developer comments and suggestions.
+StackExchange provides an excellent Q&A format that has been proven to be very effective. However, almost all developers would agree that it would be far too time consuming and produce inferior results if every site rolled their own variation. The purpose of this document is to get community collaboration on how to provide the best support possible by integrating the StackExchange API into our websites all in an effort to provide high quality and standardized public support. This document is written for developers but it is encouraged that all users give feedback, so we (the developers) can provide the best support we can in the least amount of time.
 
 ---
 
 ### Standard API Calls
 
-Port all the API methods into standard EE tags. Using a single "api" endpoint, and use a fourth segment to denote the API method to be called. This will allow for all 3 segment tags to execute methods that perform custom logic.
+First and foremost, port all the API methods into standard EE tags. Using a single *api* endpoint, and use a fourth segment to denote the API method to be called.
 
 	{exp:stackexchange:api:method_name arg1="value1" arg2="value2" arg3="value3"}
-
+	
+		{variable_name}
+		
+		{some_tagpair param1="value1" param2="value2"}
+			
+			{some_variable_1}
+			{some_variable_2}
+			{some_variable_3}
+			
+		{/some_tagpair}
+		
+	{/exp:stackexchange:api:method_name}
 
 ### Advanced API calls
 
 Standard EE tags will perform more advanced calls, often performing multiple requests to the API. These methods will make advanced integration much easier.
 
 	{exp:stackexchange:method_name param1="value1" param2="value2"}
+		
+		[...]
+		
+	{/exp:stackexchange:method_name}
 
+---
 
 ### Searchable Knowledgebase
 
-The main objective to these methods would be to allow users to easily search for other questions/answers, and easily fetch all the associated meta data. This data would be parsed into various EE variables and tag pairs.
+The main objective of these methods would be to allow users to easily search for other questions/answers, and easily fetch all the associated meta data. This data would be parsed into various EE variables and tag pairs.
 
 1. Method to create a standalone search/results page that allows users to search StackExchange for questions and answers.
 2. Method to peform the same type of searches listed above, except without the need for submitting a form.
