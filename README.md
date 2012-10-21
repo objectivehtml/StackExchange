@@ -8,6 +8,8 @@
 
 - Objective HTML
 
+---
+
 ### Overview
 
 StackExchange provides an excellent Q&A format that has been proven to be very effective. However, almost all developers would agree that it would be far too time consuming and produce inferior results if every site rolled their own variation. The purpose of this document is to get community collaboration on how to provide the best support possible by integrating the StackExchange API into our websites all in an effort to provide high quality and standardized public support. This document is written for developers but it is encouraged that all users give feedback, so we (the developers) can provide the best support we can in the least amount of time.
