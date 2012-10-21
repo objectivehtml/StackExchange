@@ -20,7 +20,7 @@ StackExchange provides an excellent Q&A format that has been proven to be very e
 
 Port all the API methods into standard EE tags. Using a single "api" endpoint, and use a fourth segment to denote the API method to be called. This will allow for all 3 segment tags to execute methods that perform custom logic.
 
-  {exp:stackexchange:api:method_name arg1="value1" arg2="value2" arg3="value3"}
+	{exp:stackexchange:api:method_name arg1="value1" arg2="value2" arg3="value3"}
 
 
 ## Advanced API calls
@@ -77,5 +77,6 @@ Abstraction is the utmost importance here. All code should 100% DRY with a clear
 
 ## How to Contribute?
 
-All the proposed code will be open source. It's intended for everyone to benefit from this migration to StackExchange. There is clearly a lot of momentum to be involved, and getting developers on board will only make things easier. Non developers can contributes with ideas, features, 
+All the proposed code is intended to be open source. It's intended for everyone to benefit from this migration to StackExchange. There is clearly a lot of momentum to be involved, and getting developers on board will only make things easier. Non developers can contributes with ideas, features, and commenting on how you would like to see improved support. 
 
+If anyone knows a lot about licensing, this project will need one. This is intended to be a community effort, and it's encouraging to see the all the support for the movement.
