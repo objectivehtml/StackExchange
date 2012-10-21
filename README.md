@@ -81,7 +81,7 @@ Abstraction is the utmost importance here. All code should 100% DRY with a clear
 	- load config files to get cache length
 	
 - API Driver/extends Base Class
-	- sends https requests to the API endpoints
+	- sends requests to the API endpoints
 
 
 *Subclasses would be considered 'drivers'. Drivers could perform any additional custom logic not a part of the core API. This will allow for a scalable architecture so if StackExchange adds new features, the core API won't have to be changes. Additionally, if other developers want to integrate even more custom features, drivers will be a way for people to use the core API without hacking or breaking existing code. Drivers and extendible architecture is critical to success and for developer adoption.*
