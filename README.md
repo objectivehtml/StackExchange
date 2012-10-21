@@ -61,7 +61,7 @@ The main objective of these methods would be to allow users to easily search for
 
 ### Caching
 
-Cacheing should be built into the core. Using config files, one could adjust the cache length. This would minimize all requests to the server.
+Caching should be built into the core. Using config files, one could adjust the cache length. This would minimize all requests to the server.
 
 ### Abstraction
 
